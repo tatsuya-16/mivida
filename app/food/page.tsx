@@ -20,7 +20,7 @@ const Food = async () => {
         <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 px-4 py-4 gap-4 font-[family-name:var(--font-geist-sans)]">
         {allPostData.map((postData: postData) => {
           if (postData.category === 'food') {
-              return <MusicCard postData={postData} />;
+              return <MusicCard key={postData.id} postData={postData} />;
           } else {
               return null; // 他のカテゴリがあればここに処理を追加
           }

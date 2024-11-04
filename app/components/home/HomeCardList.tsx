@@ -25,11 +25,11 @@ export const HomeCardList = async () => {
       <div className="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 px-4 py-4 gap-4 font-[family-name:var(--font-geist-sans)]">
         {allPostData.map((postData: postData) => {
           if (postData.category === 'food') {
-              return <FoodCard postData={postData} />;
+              return <FoodCard key={postData.id} postData={postData} />;
           } else if (postData.category === 'music') {
-              return <MusicCard postData={postData} />;
+              return <MusicCard key={postData.id} postData={postData} />;
           } else if (postData.category === 'movie') {
-              return <MovieCard postData={postData} />;
+              return <MovieCard key={postData.id} postData={postData} />;
           } else {
               return null; // 他のカテゴリがあればここに処理を追加
           }
