@@ -18,7 +18,7 @@ const Header = () => {
             </Link>
             <Link
               className="font-medium text-gray-500 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-              href="/"
+              href="/movie"
             >
               Movie
             </Link>
@@ -36,13 +36,13 @@ const Header = () => {
             </Link>
             <Link
               className="font-medium text-gray-500 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-              href="/"
+              href="/music"
             >
               Music
             </Link>
             <Link
               className="font-medium text-gray-500 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-              href="/"
+              href="/food"
             >
               Food
             </Link>
@@ -54,7 +54,7 @@ const Header = () => {
             </Link>
             <Link
               className="bg-black py-3 px-4 text-white rounded-md font-medium"
-              href="/bbs-posts/create"
+              href="/post/create"
             >
               New Experience
             </Link>
