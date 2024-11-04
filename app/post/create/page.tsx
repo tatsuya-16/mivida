@@ -1,12 +1,11 @@
 "use client"
 
-import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import {
     Select,
     SelectContent,
     SelectGroup,
     SelectItem,
-    SelectLabel,
     SelectTrigger,
     SelectValue,
   } from "@/components/ui/select"
@@ -17,7 +16,6 @@ import React, { useState } from 'react';
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import router, { useRouter } from 'next/navigation';
 import { post } from '@/app/actions/postAction';
 
 export const formSchema = z.object({
@@ -240,11 +238,11 @@ const CreatePost = () => {
                                         <Input
                                             type="file"
                                             accept="image/*"
-                                            onChange={(e) => {
-                                                if (e.target.files) {
-                                                    setImageFile(e.target.files[0]); // 最初のファイルをセット
-                                                }
-                                            }}
+                                            // onChange={(e) => {
+                                            //     if (e.target.files) {
+                                            //         setImageFile(e.target.files[0]); // 最初のファイルをセット
+                                            //     }
+                                            // }}
                                         />
                                     </FormControl>
                                     <FormMessage />
